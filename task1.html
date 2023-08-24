@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Warming Awareness</title>
+    <style>
+        /* Reset some default styles */
+        body, h1, h2, p, ul, li, button, input {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Light Grey background */
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #0099cc; /* Blue background */
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 32px;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff; /* White background */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        /* Interactive Elements */
+        .interactive-section {
+            text-align: center;
+        }
+
+        .interactive-button {
+            padding: 10px 20px;
+            background-color: #00cc66; /* Light Green background */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .interactive-button:hover {
+            background-color: #00994d; /* Darker Green on hover */
+        }
+
+        .interactive-slider {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        /* Pseudo Elements */
+        .pseudo-elements-section {
+            text-align: center;
+        }
+
+        .pseudo-element-box {
+            position: relative;
+            padding: 20px;
+            background-color: #0099cc; /* Blue background */
+            color: #fff;
+        }
+
+        .pseudo-element-box::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent Dark Grey overlay */
+        }
+
+        /* 3D Transform */
+        .three-d-section {
+            text-align: center;
+        }
+
+        .three-d-cube {
+            perspective: 1000px;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            transform-style: preserve-3d;
+            animation: spin 10s infinite linear;
+        }
+
+        .three-d-cube div {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 153, 204, 0.7); /* Semi-transparent Blue */
+            border: 1px solid #0099cc; /* Blue border */
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .three-d-cube .front { transform: translateZ(100px); }
+        .three-d-cube .back { transform: rotateY(180deg) translateZ(100px); }
+        .three-d-cube .top { transform: rotateX(90deg) translateZ(100px); }
+        .three-d-cube .bottom { transform: rotateX(-90deg) translateZ(100px); }
+        .three-d-cube .left { transform: rotateY(-90deg) translateZ(100px); }
+        .three-d-cube .right { transform: rotateY(90deg) translateZ(100px); }
+
+        @keyframes spin {
+            0% { transform: rotateY(0); }
+            100% { transform: rotateY(360deg); }
+        }
+
+        /* Custom Cursor */
+        .custom-cursor-section {
+            text-align: center;
+        }
+
+        .custom-cursor-map {
+            width: 300px;
+            height: 300px;
+            background-image: url('https://media0.giphy.com/media/3ov9jYkVbdGMo6UcG4/200w.webp?cid=ecf05e47h9ixxas36p800ay8qgqempdiqt7tbribdcsct5up&ep=v1_gifs_search&rid=200w.webp&ct=g'); /* Giphy Animation Link */
+            background-position: center;
+            background-size: cover;
+            cursor: url('https://tse2.explicit.bing.net/th?id=OIP.wBMAMGNbwpjb5U_o4hEy7gHaDt&pid=Api&P=0&h=180'), auto; /* Custom Cursor Image Link */
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            background-color: #333; /* Dark Grey background */
+            color: #fff;
+            padding: 10px;
+        }
+
+        /* Responsiveness */
+        @media screen and (max-width: 768px) {
+            main {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Global Warming Awareness</h1>
+    </header>
+    <main>
+        <section class="interactive-section">
+            <h2>Take Action</h2>
+            <p>Global warming is a pressing issue. Take action to reduce emissions:</p>
+            <button class="interactive-button">Reduce Emissions</button>
+            <input type="range" class="interactive-slider" min="0" max="100" value="50">
+            <p><strong>Changing emissions:</strong> When you move the slider, you can simulate reducing emissions to combat global warming.</p>
+        </section>
+
+        <section class="pseudo-elements-section">
+            <h2>Effects of Global Warming</h2>
+            <div class="pseudo-element-box">
+                <p>Global warming is causing rising sea levels, extreme weather events, and disruptions to ecosystems.</p>
+            </div>
+        </section>
+
+        <section class="three-d-section">
+            <h2>Climate Change in 3D</h2>
+            <div class="three-d-cube">
+                <div class="front">Front</div>
+                <div class="back">Back</div>
+                <div class="top">Top</div>
+                <div class="bottom">Bottom</div>
+                <div class="left">Left</div>
+                <div class="right">Right</div>
+            </div>
+        </section>
+
+        <section class="custom-cursor-section">
+            <h2>Interactive Map</h2>
+            <div class="custom-cursor-map"></div>
+        </section>
+    </main>
+    <footer>
+        Created by Mohd Faiz Faheem &copy; 2023 Global Warming Awareness
+    </footer>
+</body>
+</html>
